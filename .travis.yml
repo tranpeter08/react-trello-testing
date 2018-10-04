@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: tcC338OF3HXLlBYHGRyx70aeuUQeJjQoRJSn/yL9PhNoc0LAuQnMi6PCzcN6j09oTVHljBYZmqPE8OFOFYsJUD89Ty6QuzbIumKwYVkBsOXERXNw5hb/Og1YbEq+0hpNZ3w+Mc6PYXm6J+930D8hzdjQGB1wLjKxgaNzNFqZg75+sP4DgGVnR/93A/1Wr2PUYYydDLvYtsqV7ugCnX1aGlTxPQEDlAdD2F+cTlVKY6VFZKiLTR/gT3zcQfwTJyiGQqaSHMLKzPLfEJwgeTjkMoBh14R7nGkkGfPs2Fi3ZQD3b0QRT4xe2XdGnsJQOFEFC6OuPVsYdNRSa0EXcrbYXjiyPdi7I0phzdiSivRwDVITHAZdkKZLyaptXxkXZasPUbCTT2RJMO6VIjyhko75G5cMqYs4Bm5dEyG/6mTWkfTJN3UgOc/btSfkexGFzLV+s0OEUzL01m7m608k9ROwhARb5bbrO3cAKhV3QaZ1ErUVpDJHwWQqzywGEwrfqArFvwRHf4K0sEp6ILMMQdWuS/KTJWvrRA9BNh0SOWj6WFCL9JNbW7WExYDf1wIVMITZWpbIzr8Bt4FznCe+S8kRGpQxXoYLIIYp3nPaKPpc/qUjy/hxxPAW1UdfAuyjuax6huob5fxYtsSNGSJv01FLJ6p8FDBjUMWkEKrmVNrrEDw=
+  app: enigmatic-stream-71145
+  on:
+    repo: tranpeter08/react-trello-testing
